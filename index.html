@@ -359,18 +359,34 @@ span.kh {font:bold italic 70%/1.2em 'Georgia', 'Times New Roman', 'Times', serif
       </div>
       <div class="modal-body">
 	      
-<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyokbaz" method="post">
-  <fieldset id="fs-frm-inputs">
-    <label for="full-name">Full Name</label>
-    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-    <label for="email-address">Email Address</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-    <label for="message">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-  </fieldset>
-  <input type="submit" value="Submit">
-</form>
+
+<div class="contactform-container container py-4">
+  <form id="contactForm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyokbaz" method="post">
+   <fieldset id="fs-frm-inputs">
+
+    <div class="mb-3">
+      <label class="form-label" for="full-name">Full Name</label>
+      <input class="form-control" id="full-name" placeholder="First and Last" required="" type="text"/>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="email-address">Email Address</label>
+      <input class="form-control" id="email-address" name="_replyto" placeholder="email@domain.tld" type="email" required="" />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-control" id="message" name="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required="" rows="5" style="height: 10rem;" type="text"></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+    </div>
+
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg" type="submit" value="submit">Submit</button>
+    </div>
+
+   </fieldset>
+  </form>
+</div><!-- contactform-container -->
 	   
       </div>
       <div class="modal-footer" style="display:none;">
