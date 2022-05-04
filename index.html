@@ -22,6 +22,7 @@
   <meta content="https://avatars.githubusercontent.com/u/102637461?v=4" property="og:image"/>
   <meta content="KEVIN HITE . DEV | Lo-Fi Portfolio - User Experience Design, Cloud Computing, and Full-Stack JavaScript" property="og:image:alt"/>
   <meta content="" property="og:pubdate"/>
+  <meta property="article:publisher" content="https://www.facebook.com/kevinhitedev"/>
   <meta content="533416938126346" property="fb:app_id"/>
   <meta content="345590995483316" property="fb:pages"/>
   <meta content="@kevinhitedev" property="fb:admins"/>
@@ -358,25 +359,34 @@ span.kh {font:bold italic 70%/1.2em 'Georgia', 'Times New Roman', 'Times', serif
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-	      
+
 
 <div class="contactform-container container py-4">
-  <form id="contactForm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyokbaz" method="post">
+  <form accept-charset="utf-8" action="https://formspree.io/f/xyyokbaz" class="contactform" id="contactform" name="contactform" method="post">
+   <legend></legend>
    <fieldset id="fs-frm-inputs">
 
-    <div class="mb-3">
+    <div class="input-group mb-3">
       <label class="form-label" for="full-name">Full Name</label>
-      <input class="form-control" id="full-name" placeholder="First and Last" required="" type="text"/>
+      <input autofocus aria-describedby="name-format" aria-required="true" class="form-control txt fullname" id="full-name" name="full-name" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" placeholder="First and Last" required="" type="text"/>
+      <span id="name-format" class="help">Format: firstname lastname</span>
     </div>
 
-    <div class="mb-3">
+    <div class="input-group mb-3">
       <label class="form-label" for="email-address">Email Address</label>
-      <input class="form-control" id="email-address" name="_replyto" placeholder="email@domain.tld" type="email" required="" />
+      <input aria-describedby="email-format" aria-required="true" class="form-control txt emailaddress" id="email-address" name="email-address" placeholder="email@domain.tld" required="" type="email"/>
+      <span id="email-format" class="help">Format: alias@email.com</span>
     </div>
 
-    <div class="mb-3">
+    <div class="input-group mb-3">
+        <label for="phone">Phone Number:</label>
+        <input aria-describedby="phone-format" aria-required="true" class="form-control txt phonenumber" id="phone-number" name="phone-number" placeholder="Enter your 10-digit phone number here" required="" type="tel"/>
+        <span id="email-format" class="help">Format: 123-456-7890</span>
+    </div>
+
+    <div class="input-group mb-3">
       <label class="form-label" for="message">Message</label>
-      <textarea class="form-control" id="message" name="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required="" rows="5" style="height: 10rem;" type="text"></textarea>
+      <textarea aria-describedby="message-format" aria-required="true" class="form-control" id="message" name="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required="" rows="5" style="height: 10rem;" type="text"></textarea>
       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
     </div>
 
@@ -386,9 +396,9 @@ span.kh {font:bold italic 70%/1.2em 'Georgia', 'Times New Roman', 'Times', serif
 
    </fieldset>
   </form>
-</div><!-- contactform-container -->
+</div><!-- contactform-container -->	      
 	   
-      </div>
+      </div><!-- modal-body -->
       <div class="modal-footer" style="display:none;">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Understood</button>
