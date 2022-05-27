@@ -69,15 +69,13 @@ Author: @kevinhitedev
 */
 
 html, body {scroll-behavior:smooth;}
-a {color:#222;font-weight:bold;text-decoration:none;} a:hover {color:#333;text-decoration:underline;}
+a {color:#222;font-weight:bold;text-decoration:none;} a:hover {color:#333;text-decoration:none;}
 body {background-color:#111;color:#222;font-size:12pt;line-height:1.8em;}
 h1, h2, h3, h4, h5 {font-family:'Rubik', sans-serif;font-weight:bold;}
-header.site-header {margin:13% auto 2em auto;}
-footer.site-footer p, header.site-header p.site-description {display:block;font-size:80%;text-align:center;text-transform:uppercase;letter-spacing:1pt;margin:0 auto;padding:.2em .5em .3em .5em;width:300px;}
-header.site-header h1.site-title a, header.site-header p.site-title a {font-weight:500;} 
-header.site-header h1.site-title a:hover, header.site-header p.site-title a:hover {text-decoration:none;}
-header.site-header h1.site-title a span {font-size:8em;font-style:italic;letter-spacing:.6;}
-main p {font-size:.9em;}
+header.site-header p.site-description {text-transform:uppercase;letter-spacing:1pt;}
+header.site-header h1.site-title a.url {font-weight:500;} 
+header.site-header h1.site-title a.url span.name {font-size:8em;font-style:italic;letter-spacing:.6;}
+p {font-size:.9em;}
   </style>
 	 <!-- TODO : add accessability tools -->
 </head>
@@ -121,7 +119,7 @@ main p {font-size:.9em;}
   <div class="mt-5 container">
     <div class="row">
 
-      <header class="site-header header text-center" id="header" itemprop="header" role="header">
+      <header class="site-header header py-5 text-center" id="header" itemprop="header" role="header">
  	<h1 class="site-title title" id="title" itemprop="title" role="title">
 	 <a class="site-url url" id="url" itemprop="url" title="<𝒌/𝒉>.ᴅᴇᴠ | UX • CLOUD • FULL-STACK JS" role="url">
 	   <span class="site-name name" itemprop="name">&lt;k/h&gt;</span>
@@ -132,9 +130,9 @@ main p {font-size:.9em;}
         </p>
       </header><!-- header -->
 
-      <main class="site-main main" id="main" id="main" itemprop="main" role="main">
+      <main class="site-main main py-5 text-center" id="main" id="main" itemprop="main" role="main">
 
-	<p class="text-center">
+	<p>
 	 <a href="https://kevinhite.dev/hifi" title="hi-fi portfolio">hi-fi</a>&nbsp; • &nbsp;<a href="https://kevinhite.dev/lofi" title="lo-fi portfolio">lo-fi</a>
         </p>
 
