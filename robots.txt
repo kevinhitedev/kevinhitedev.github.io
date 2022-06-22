@@ -1,5 +1,5 @@
-# www.robotstxt.org/
-
-# Allow crawling of all content
 User-agent: *
-Disallow:
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /assets/
+Sitemap: https://kevinhite.dev/sitemap.xml
