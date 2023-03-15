@@ -124,52 +124,79 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-      <header class="site-header header mx-auto py-5 text-center" id="header" itemprop="header" role="header">
- 	<h1 class="site-title title m-0" id="title" itemprop="title" role="title">
-	 <a class="site-url url" id="url" itemprop="url" title="<𝒌/𝒉>.ᴅᴇᴠ | UX • CLOUD • FULL-STACK DEVELOPER" role="url">
-	   <span class="site-name name" itemprop="name">&lt;k/h&gt;</span>
-         </a>
-	</h1>
-        <p class="site-description description" id="description" itemprop="description" role="description">UX • CLOUD • FULL-STACK DEVELOPER</p>
-      </header><!-- header -->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Start Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-      <main class="site-main main mx-auto py-5 text-center" id="main" id="main" itemprop="main" role="main">
-       <section class="content" id="content">
-        <p><!-- Short description goes here. Modal link to full bio. --> </p>
-	<p>Choose a portfolio below:</p>
-	<p class="m-0 port-links">
-	 <a class="port-link port-link-hi" href="https://kevinhite.dev/hifi" title="high-fidelity portfolio">hifi version</a>&nbsp; • &nbsp;
-         <a class="port-link port-link-lo" href="https://kevinhite.dev/lofi" title="low-fidelity portfolio">lofi version</a>
-	</p>
-       </section>	       
-      </main><!-- main -->
+<header>
 
-      <footer class="site-footer footer mx-auto py-5 text-center" id="footer" itemprop="footer" role="footer">
-        <p class="m-0 socialmedia-links"> 
-       	  <a class="socialmedia-link" href="https://linkedin.com/in/kevinhitedev/" title="KEVINHITE.DEV on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;
-          <a class="socialmedia-link" href="https://dribbble.com/kevinhitedev/" title="KEVINHITE.DEV on Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>&nbsp;
-          <a class="socialmedia-link" href="https://github.com/kevinhitedev/" title="KEVINHITE.DEV on GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;
-          <a class="socialmedia-link" href="https://medium.com/kevinhitedev/" title="KEVINHITE.DEV on Medium"><i class="fa fa-medium-square" aria-hidden="true"></i></a>&nbsp;
-          <a class="socialmedia-link" href="https://codepen.io/kevinhitedev/" title="KEVINHITE.DEV on CodePen"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-          <!-- enter devpost //
-          <a class="socialmedia-link" href="https://dev.to/kevinhitedev/" title="KEVINHITE.DEV on dev.to"><i class="fa fa-dev-to" aria-hidden="true"></i></a>
-          <a class="socialmedia-link" href="https://hashnode.com/kevinhitedev/" title="KEVINHITE.DEV on Hashnode"><i class="fa fa-hashnode" aria-hidden="true"></i></a>
-          <a class="socialmedia-link" href="https://twitter.com/kevinhitedev/" title="KEVINHITE.DEV on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          -->
-       </p>      
-       <p class="m-0 credit">
-         <span class="bootstrap"><small>Made with <a href="https://getbootstrap.com/" title="Bootstrap 5.3.0">Bootstrap 5.3.0</a>, </span>
-         <span class="githubpages"><a href="https://pages.github.com" title="GitHub Pages">GitHub Pages</a>, and </span>
-         <span class="forkawesome"><a href="https://forkaweso.me/" title="Fork Awesome 1.2.0">Fork Awesome 1.2.0</a></small></span>
-       </p>
-     </footer>
-     
-     <div class="cssswitcher">
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
+        <div class="carousel-caption">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
       </div>
-     </div>
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+        <div class="carousel-caption">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+        <div class="carousel-caption">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="fw-light">Full Page Image Slider</h1>
+    <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images
+      in this snippet are from <a href="https://unsplash.com">Unsplash</a>, taken by <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!</p>
+  </div>
+</section>
 	
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
