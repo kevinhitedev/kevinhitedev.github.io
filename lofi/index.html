@@ -85,26 +85,15 @@
    nav.navbar ul {text-transform:uppercase;font-size:85%;letter-spacing:1pt;}
    nav.navbar ul li a {color:#000;font-weight:600;} nav.navbar ul li a:hover {color:#333;}
    p {line-height:1.8em;} 
-   p a.btn, form.contactform fieldset .input-group button.btn, .card-footer a.btn {background-color:#000;border:1px solid #222 !important;box-shadow:5px 5px 5px #ccc;border-radius:10px;color:#fff;display:block;font-weight:bold;margin:.5em auto;padding:.3em .5em;text-align:center;max-width:280px;} 
-   p a.btn:hover, form.contactform fieldset .input-group button.btn:hover, .card-footer a.btn:hoveer {background-color:#fff;border:1px solid #222 !important;color:#000;text-decoration:none;}
-   .cssswitcher {right:.1em;bottom:.1em;position:absolute;z-index:99999;}
-
-   .projectlist {max-width:300px;margin:1em auto;border:1px solid #ddd;}
-   .projectlist {border-bottom:1px solid #ddd;padding:.5em}
-   .projectlist li {list-style-type:none;} .projectlist li a:hover {background-color:#eee;}
-   .projectlist li a {display:block;padding:1em .5em;}
-
-   form.contactform {max-width:300px;margin:1em auto;border:1px solid #ddd;}
-   form.contactform fieldset {padding:.2em 1em;}
-   form.contactform fieldset .input-group {margin:.3em auto;display:inline-block;width:100%;}
-   form.contactform fieldset .input-group label {color:#999;font-size:90%;text-align:left;letter-spacing:1pt;text-transform:uppercase;display:inline-block;width:100%;}
-   form.contactform fieldset .input-group input {}
-   form.contactform fieldset .input-group input, 
-   form.contactform fieldset .input-group option, form.contactform fieldset .input-group select, form.contactform fieldset .input-group textarea {border:1px solid #ddd;font-size:89%;padding:.3em .5em;width:100%;}
-   form.contactform fieldset .input-group span.help {color:#999;font-size:70%;text-align:right;text-transform:uppercase;display:inline-block;width:100%;}
+   form {margin:0 auto;max-width:400px;}
+   form .input-group {display:block;padding:.5em 0;}
+   form .input-group input, form .input-group select, form .input-group select option, form .input-group textarea {border:1px solid #999;color:#999;display:block;font-size:10pt;padding:.3em .5em;width:100%;}
+   form .input-group input:hover form .input-group select:hover, form .input-group select option:hover, form .input-group textarea:hover {border-color:#222;color:#222;}
+   form .input-group label {color:#000;font-size:80%;font-weight:bold;text-transform:uppercase;}
+   form .input-group span {color:#999;display:block;font-size:80%;text-align:right;}
+   .transparency {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";filter: alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity:0.7;opacity:0.7;}
   </style>
-  <!-- TODO : add accessability tools -->
-</head>
+ </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPT5JV8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -140,235 +129,152 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-      <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top" id="mainNav">
-       <div class="container px-4">
-        <a class="navbar-brand" href="#header" title="<𝒌/𝒉>.ᴅᴇᴠ | UX • CLOUD • FULL-STACK DEVELOPER"><𝒌/𝒉>.ᴅᴇᴠ</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about" title="About Me">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects" title="My Projects">My Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://journal.kevinhite.dev/" title="Journal">Journal</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact" title="Hire Me">Hire Me</a></li>
-         </ul>
-        </div>
+  <div class="contanier site-wrapper">
+
+   <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top transparency" id="mainNav">
+    <div class="container px-4">
+     <a class="navbar-brand" href="#header" title="<𝒌/𝒉>.ᴅᴇᴠ | UX • CLOUD • FULL-STACK DEVELOPER"><𝒌/𝒉>.ᴅᴇᴠ</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+     <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+       <li class="nav-item"><a class="nav-link" href="#about" title="About Me">About Me</a></li>
+       <li class="nav-item"><a class="nav-link" href="#projects" title="My Projects">My Projects</a></li>
+       <li class="nav-item"><a class="nav-link" href="https://journal.kevinhite.dev/" title="Journal">Journal</a></li>
+       <li class="nav-item"><a class="nav-link" href="#contact" title="Hire Me">Hire Me</a></li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+
+   <header class="m-0 header site-header" id="header" itemprop="header" name="header" role="header">
+    <h1 class="title site-title text-center" id="title" itemprop="title" name="title" role="title">
+     <a class="site-url url" href="/" id="url" itemprop="url" title="<𝒌/𝒉>.ᴅᴇᴠ | UX • CLOUD • FULL-STACK DEVELOPER" role="url">
+      <span class="site-name name" itemprop="name">&lt;k/h&gt;</span>
+     </a>
+    </h1>
+    <p class="description site-description text-center" id="description" itemprop="description" name="description" role="descritption">UX • CLOUD • FULL-STACK DEVELOPER</p>
+   </header>
+
+   <main class="py-5 main site-main" id="main" itemprop="main" name="main" role="">
+    <section class="section about site-about" id="about" itemprop="about" name="about" role="">
+     <h2 class="section-title about-title text-center" id="section-about-title" itemprop="" name="" role="">About</h2>
+     <p class="section-description" id="section-about-description" itemprop="" name="" role=""></p>
+    </section>
+    <section class="section projects site-projects" id="projects" itemprop="projects" name="projects" role="">
+     <h2 class="section-title projects-title text-center" id="section-projects-title" itemprop="" name="" role="">Projects</h2>
+     <p class="section-description" id="section-projects-description" itemprop="" name="" role="">
+       <form action="" class="projects-form" id="projects-form" itemprop="" name="" role="">
+        <fieldset class="projects-form-fieldset" id="projects-form-fieldset" itemprop="" name="" role="">
+         <legend class="projects-form-legend text-center" id="projects-form-legend" itemprop="" name="" role="">Choose a project:</legend>
+
+         <div class="input-group">
+          <label class="projects-label" for="projects" id="projects-lable" itemprop="" name="" role="">UX</label>
+	  <select class="projects-select" id="projects-select" itemprop="" name="" role="">
+	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project4">Project #4</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project5">Project #5</option>
+   	  </select>
+	 </div><!-- input-group -->
+
+         <div class="input-group">
+          <label class="projects-label" for="projects" id="projects-lable" itemprop="" name="" role="">Graphics</label>
+	  <select class="projects-select" id="projects-select" itemprop="" name="" role="">
+	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project4">Project #4</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project5">Project #5</option>
+   	  </select>
+	 </div><!-- input-group -->
+
+
+        </fieldset>
+       </form>
+       <ul class="projects-list" id="projects-list" itemprop="" name="" role="">
+         <li class="projects-list-item" id="projects-list-item1" itemprop="" name="" role="">
+           <a class="projects-list-item-link" href="" id="projects-list-item-link1" itemprop="" title="Project #1">Project #1</a>
+         </li>
+         <li class="projects-list-item" id="projects-list-item2" itemprop="" name="" role="">
+           <a class="projects-list-item-link" href="" id="projects-list-item-link2" itemprop="" title="Project #2">Project #2</a>
+         </li>
+         <li class="projects-list-item" id="projects-list-item3" itemprop="" name="" role="">
+           <a class="projects-list-item-link" href="" id="projects-list-item-link3" itemprop="" title="Project #3">Project #3</a>
+         </li>
+         <li class="projects-list-item" id="projects-list-item4" itemprop="" name="" role="">
+           <a class="projects-list-item-link" href="" id="projects-list-item-link4" itemprop="" title="Project #4">Project #4</a>
+         </li>
+         <li class="projects-list-item" id="projects-list-item5" itemprop="" name="" role="">
+           <a class="projects-list-item-link" href="" id="projects-list-item-link5" itemprop="" title="Project #5">Project #5</a>
+         </li> 
+       </ul>
+     </p>
+    </section>
+    <section class="section contact site-contact" id="contact" itemprop="contact" name="contact" role="">
+     <h2 class="section-title contact-title text-center" id="section-contact-title" itemprop="" name="" role="">Contact</h2>
+     <form action="https://formspree.io/kevhite@icloud.com" class="contactform" id="contactform" method="POST" name="contactform">
+      <fieldset>
+       <legend></legend>
+       <div class="input-group">
+      	 <label for="name">Name:</label>    
+         <input autofocus aria-describedby="name-format" aria-required="true" class="txt fullname" id="fullname" name="name"  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" placeholder="Enter your full name here" type="text" value="Enter your full name here" required />
+         <span id="name-format" class="help">Format: firstname lastname</span>
        </div>
-      </nav>
-
-      <header class="site-header header mx-auto py-5 text-center" id="header" itemprop="header" role="header">
- 	<h1 class="site-title title m-0" id="title" itemprop="title" role="title">
-	 <a class="site-url url" href="/" id="url" itemprop="url" title="<𝒌/𝒉>.ᴅᴇᴠ | UX • CLOUD • FULL-STACK DEVELOPER" role="url">
-	   <span class="site-name name" itemprop="name">&lt;k/h&gt;</span>
-         </a>
-	</h1>
-        <p class="site-description description" id="description" itemprop="description" role="description">UX • CLOUD • FULL-STACK DEVELOPER</p>
-      </header><!-- header -->
-      <hr />
-   
-     <div class="mt-5 container site-wrapper">
-
-      <main class="site-main main mx-auto py-5 text-center" id="main" id="main" itemprop="main" role="main">
-       <section class="py-5 site-content content" id="content" itemprop="" role="">
-        <div class="site-about about" id="about" itemprop="" name="about" role="">
-         <h2 class="section-title">About</h2>
-          <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu porttitor nisl. Ut mattis laoreet ipsum eget consequat. Pellentesque vel sodales nisi. 
-           Cras maximus sem eget nisi sollicitudin, a aliquet sapien euismod. Mauris metus enim, suscipit quis aliquam quis, ornare vitae nisi. Sed sit amet nulla at erat cursus vestibulum vitae et enim. 
-           Aliquam erat volutpat. Phasellus vel purus vel justo pharetra ultrices id finibus justo. Quisque fermentum augue nulla, vitae volutpat felis porttitor lacinia. <br/><br/>
-	   <a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#bioModal" title="Read Kevin's Bio">Read the Bio</a>
-           <!-- insert link to read more bio modal--->
-          </p>
-	 </div><!-- about -->
-	 <hr />
-     	 <div class="py-5 site-projects projects" id="projects" itemprop="" name="projects" role="">
-       	  <h2 class="section-title">Projects</h2>
-
-
-            <!-- Content Row-->
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title">Project #1</h3>
-			    <figure class="text-center">
-		 	     <a href="/" rel="bookmark" title="Project #1">
-		   	      <img alt="Project #1" class="img-responsive" src="https://dummyimage.com/300x300/6c757d/dee2e6.jpg" />
-		   	     </a>	
-			    </figure>   
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                        </div>
-                        <div class="card-footer"><a class="btn" href="#!">More Info</a></div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                          <h3 class="card-title">Project #2</h3>
-			  <figure class="text-center">
-		 	   <a href="/" rel="bookmark" title="Project #2">
-		   	    <img alt="Project #2" class="img-responsive" src="https://dummyimage.com/300x300/6c757d/dee2e6.jpg" />
-		   	   </a>	
-			  </figure>   
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
-                        </div>
-                        <div class="card-footer"><a class="btn" href="#!">More Info</a></div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                          <h3 class="card-title">Project #3</h3>
-			  <figure class="text-center">
-		 	   <a href="/" rel="bookmark" title="Project #3">
-		   	    <img alt="Project #3" class="img-responsive" src="https://dummyimage.com/300x300/6c757d/dee2e6.jpg" />
-		   	   </a>	
-			  </figure>   
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                        </div>
-                        <div class="card-footer"><a class="btn" href="#!">More Info</a></div>
-                    </div>
-                </div>
-            </div>
-
-	  <p><a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#projectsModal" title="Click for More Projects">Click For More Projects</a></p>
-         </div>
-	 <hr />
-         <div class="py-5 site-contact contact" id="contact" itemprop="" name="contact" role="">
-          <h2 class="section-title">Contact</h2>
-
-	   <form action="https://formspree.io/kevhite@icloud.com" class="contactform" id="contactform" method="POST" name="contactform">
-  	    <fieldset>
-    	     <legend></legend>
-    	     <div class="input-group">
-      	      <label for="name">Name:</label>    
-      	      <input autofocus aria-describedby="name-format" aria-required="true" class="txt fullname" id="fullname" name="name"  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" placeholder="Enter your full name here" type="text" value="Enter your full name here" required />
-      	      <span id="name-format" class="help">Format: firstname lastname</span>
-    	     </div>
-    	     <div class="input-group">
-              <label for="_replyto">Email:</label>
-              <input aria-describedby="email-format" aria-required="true" class="txt eamiladdress" id="_replyto" name="_replyto" placeholder="Enter your valid email address here" type="email" value="Enter your valid email address here" required />
-              <span id="email-format" class="help">Format: alias@email.com</span>
-    	     </div>
-    	     <div class="input-group">
-              <label for="phone">Phone:</label>
-              <input aria-describedby="phone-format" aria-required="true" class="txt phonenumber" id="phone" name="phone" placeholder="Enter your 10-digit phone number here" type="tel" value="Enter your 10-digit phone number here" required/>
-              <span id="email-format" class="help">Format: 123-456-7890</span>
-    	     </div>
-    	     <div class="input-group">
-              <label for="reason">Reason:</label>
-              <select aria-describedby="reason-format" aria-required="true">
-           	<option value="inquiry">I want to hire you</option>
-           	<option value="techissue">There's something wrong with the website.</option>
-              </select>
-    	     </div>
-    	     <div class="input-group">
-              <label for="message">Message:</label>
-              <textarea aria-describedby="message-format" aria-required="true" class="txt message" placeholder="Enter your message here" value="Enter your message here!"></textarea>
-              <button class="btn w-100" type="submit" value="Send Message">Send Message</button>
-             </div>
-    	     <div class="text-center input-group">
-     	      <a href="mailto:kevhite@icloud.com" title="Contact me via E-mail"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>&nbsp;
-     	      <a href="https://m.me/kevinhitedev" title="Reach out to KEVINHITE.DEV on Messenger"><i class="fa fa-facebook-messenger fa-2x" aria-hidden="true"></i></a>
-    	     </div>
-  	    </fieldset>
-	   </form>
-
-         </div>
-        </section>
-       </main>
-
-       <footer class="py-5 site-footer footer mx-auto py-5 text-center" id="footer" itemprop="footer" role="footer">
-        <p class="m-0 socialmedia-links"> 
-       	  <a class="socialmedia-link" href="https://linkedin.com/in/kevinhitedev/" title="KEVINHITE.DEV on LinkedIn"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>&nbsp;
-          <a class="socialmedia-link" href="https://dribbble.com/kevinhitedev/" title="KEVINHITE.DEV on Dribbble"><i class="fa fa-dribbble fa-2x" aria-hidden="true"></i></a>&nbsp;
-          <a class="socialmedia-link" href="https://github.com/kevinhitedev/" title="KEVINHITE.DEV on GitHub"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>&nbsp;
-          <a class="socialmedia-link" href="https://codepen.io/kevinhitedev/" title="KEVINHITE.DEV on CodePen"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
-        </p>      
-        <p class="m-0 credit">
-         <span class="bootstrap"><small>Made with <a href="https://getbootstrap.com/" title="Bootstrap 5.3.0">Bootstrap 5.3.0</a>, </span>
-         <span class="githubpages"><a href="https://pages.github.com" title="GitHub Pages">GitHub Pages</a>, and </span>
-         <span class="forkawesome"><a href="https://forkaweso.me/" title="Fork Awesome 1.2.0">Fork Awesome 1.2.0</a></small></span>
-        </p>
-      </footer>
-
-   </div><!-- container -->
-
-<div class="bio modal-dialog modal-dialog-centered modal-dialog-scrollable">
-
- <div class="modal fade" id="bioModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Bio</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       <div class="input-group">
+         <label for="_replyto">Email:</label>
+         <input aria-describedby="email-format" aria-required="true" class="txt eamiladdress" id="_replyto" name="_replyto" placeholder="Enter your valid email address here" type="email" value="Enter your valid email address here" required />
+         <span id="email-format" class="help">Format: alias@email.com</span>
+       </div>
+       <div class="input-group">
+         <label for="phone">Phone:</label>
+         <input aria-describedby="phone-format" aria-required="true" class="txt phonenumber" id="phone" name="phone" placeholder="Enter your 10-digit phone number here" type="tel" value="Enter your 10-digit phone number here" required/>
+         <span id="email-format" class="help">Format: 123-456-7890</span>
+       </div>
+       <div class="input-group">
+         <label for="reason">Reason:</label>
+         <select aria-describedby="reason-format" aria-required="true">
+           <option value="inquiry">I want to hire you</option>
+           <option value="techissue">There's something wrong with the website.</option>
+         </select>
+       </div>
+      <div class="input-group">
+        <label for="message">Message:</label>
+        <textarea aria-describedby="message-format" aria-required="true" class="txt message" placeholder="Enter your message here" value="Enter your message here!"></textarea>
+        <button class="btn" type="submit" value="Send Message">Send Message</button>
       </div>
-      <div class="modal-body">
-	<figure class="text-center">
-	 <a href="/" rel="bookmark" title="">
-	  <img alt="" class="img-responsive" src="https://dummyimage.com/300x300/6c757d/dee2e6.jpg" />
-         </a>	
-	</figure>   
-        <p> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu porttitor nisl. Ut mattis laoreet ipsum eget consequat. Pellentesque vel sodales nisi. Cras maximus sem eget nisi sollicitudin, a aliquet sapien euismod. Mauris metus enim, suscipit quis aliquam quis, ornare vitae nisi. Sed sit amet nulla at erat cursus vestibulum vitae et enim. Aliquam erat volutpat. Phasellus vel purus vel justo pharetra ultrices id finibus justo. Quisque fermentum augue nulla, vitae volutpat felis porttitor lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu porttitor nisl. Ut mattis laoreet ipsum eget consequat. Pellentesque vel sodales nisi. Cras maximus sem eget nisi sollicitudin, a aliquet sapien euismod. Mauris metus enim, suscipit quis aliquam quis, ornare vitae nisi. Sed sit amet nulla at erat cursus vestibulum vitae et enim. Aliquam erat volutpat. Phasellus vel purus vel justo pharetra ultrices id finibus justo. Quisque fermentum augue nulla, vitae volutpat felis porttitor lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu porttitor nisl. Ut mattis laoreet ipsum eget consequat. Pellentesque vel sodales nisi. Cras maximus sem eget nisi sollicitudin, a aliquet sapien euismod. Mauris metus enim, suscipit quis aliquam quis, ornare vitae nisi. Sed sit amet nulla at erat cursus vestibulum vitae et enim. Aliquam erat volutpat. Phasellus vel purus vel justo pharetra ultrices id finibus justo. Quisque fermentum augue nulla, vitae volutpat felis porttitor lacinia. 
-        </p>
-        <p> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu porttitor nisl. Ut mattis laoreet ipsum eget consequat. Pellentesque vel sodales nisi. Cras maximus sem eget nisi sollicitudin, a aliquet sapien euismod. Mauris metus enim, suscipit quis aliquam quis, ornare vitae nisi. Sed sit amet nulla at erat cursus vestibulum vitae et enim. Aliquam erat volutpat. Phasellus vel purus vel justo pharetra ultrices id finibus justo. Quisque fermentum augue nulla, vitae volutpat felis porttitor lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu porttitor nisl. Ut mattis laoreet ipsum eget consequat. Pellentesque vel sodales nisi. Cras maximus sem eget nisi sollicitudin, a aliquet sapien euismod. Mauris metus enim, suscipit quis aliquam quis, ornare vitae nisi. Sed sit amet nulla at erat cursus vestibulum vitae et enim. Aliquam erat volutpat. Phasellus vel purus vel justo pharetra ultrices id finibus justo. Quisque fermentum augue nulla, vitae volutpat felis porttitor lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu porttitor nisl. Ut mattis laoreet ipsum eget consequat. Pellentesque vel sodales nisi. Cras maximus sem eget nisi sollicitudin, a aliquet sapien euismod. Mauris metus enim, suscipit quis aliquam quis, ornare vitae nisi. Sed sit amet nulla at erat cursus vestibulum vitae et enim. Aliquam erat volutpat. Phasellus vel purus vel justo pharetra ultrices id finibus justo. Quisque fermentum augue nulla, vitae volutpat felis porttitor lacinia. 
-        </p>
-	<p class="text-center">
-	  <a class="socialmedia-link" href="https://bitbucket.io/kevinhitedev/" title="KEVINHITE.DEV on BitBucket"><i class="fa fa-bitbucket" aria-hidden="true"></i></a>&nbsp;
-	  <a class="socialmedia-link" href="https://codepen.io/kevinhitedev/" title="KEVINHITE.DEV on CodePen"><i class="fa fa-codepen" aria-hidden="true"></i></a>&nbsp;
-	  <a class="socialmedia-link" href="https://behance.net/kevinhitedev/" title="KEVINHITE.DEV on Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>&nbsp;
-	  <a class="socialmedia-link" href="https://devpost.com/kevinhitedev/" title="KEVINHITE.DEV on Devpost"><i class="fa fa-devpost" aria-hidden="true"></i></a>&nbsp;
-          <a class="socialmedia-link" href="https://medium.com/kevinhitedev/" title="KEVINHITE.DEV on Medium"><i class="fa fa-medium-square" aria-hidden="true"></i></a>&nbsp;
-          <a class="socialmedia-link" href="https://dev.to/kevinhitedev/" title="KEVINHITE.DEV on dev.to"><i class="fa fa-dev-to" aria-hidden="true"></i></a>&nbsp;
-          <a class="socialmedia-link" href="https://hashnode.com/kevinhitedev/" title="KEVINHITE.DEV on Hashnode"><i class="fa fa-hashnode" aria-hidden="true"></i></a>&nbsp;
-          <a class="socialmedia-link" href="https://twitter.com/kevinhitedev/" title="KEVINHITE.DEV on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-	</p>
-      </div>
-    </div>
-  </div>
- </div>
+     </fieldset>
+    </form>
+      <p class="section-description text-center" id="section-contact-description" itemprop="" name="" role="">
+       <a class="contact-link" href="mailto:kevhite@icloud.com" id="" itemprop="" name="" role="" title="Contact me via E-mail"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>&nbsp;
+       <a class="contact-link" href="https://m.me/kevinhitedev" id="" itemprop="" name="" role="" title="Reach out to KEVINHITE.DEV on Messenger"><i class="fa fa-facebook-messenger fa-2x" aria-hidden="true"></i></a>
+      </p>
+    </section>
+   </main>
 
-</div><!-- end bio -->
+   <footer class="py-5 footer site-footer" id="footer" itemprop="footer" name="footer" role="">
+    <p class="m-0 socialmedia-links text-center" id="" itemprop="" name="" role="">
+     <a class="socialmedia-link" href="https://linkedin.com/in/kevinhitedev/" title="KEVINHITE.DEV on LinkedIn"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>&nbsp;
+     <a class="socialmedia-link" href="https://dribbble.com/kevinhitedev/" title="KEVINHITE.DEV on Dribbble"><i class="fa fa-dribbble fa-2x" aria-hidden="true"></i></a>&nbsp;
+     <a class="socialmedia-link" href="https://github.com/kevinhitedev/" title="KEVINHITE.DEV on GitHub"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>&nbsp;
+     <a class="socialmedia-link" href="https://medium.com/kevinhitedev/" title="KEVINHITE.DEV on Medium"><i class="fa fa-medium-square fa-2x" aria-hidden="true"></i></a>&nbsp;
+     <a class="socialmedia-link" href="https://codepen.io/kevinhitedev/" title="KEVINHITE.DEV on CodePen"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
+    </p> 
+    <p class="m-0 credit text-center">
+     <span class="bootstrap"><small>Made with <a href="https://getbootstrap.com/" title="Bootstrap 5.3.0">Bootstrap 5.3.0</a>, </span>
+     <span class="githubpages"><a href="https://pages.github.com" title="GitHub Pages">GitHub Pages</a>, and </span>
+     <span class="forkawesome"><a href="https://forkaweso.me/" title="Fork Awesome 1.2.0">Fork Awesome 1.2.0</a></small></span>
+    </p>
+   </footer>
 
-<div class="moreprojects modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  </div><!-- container -->
 
- <div class="modal fade" id="projectsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">More Projects</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
+  <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"></script>
 
-
-          <select class="projectdrop" id="projectdrop">
-  	   <option value="project1">Project #1</option>
-  	   <option value="project2">Project #2</option>
-  	   <option value="project3">Project #3</option>
-  	   <option value="project3">Project #4</option>
-  	   <option value="project4" selected>Project #5</option>
-          </select>
-
-          <ul class="projectlist">
-           <li><a href="http://bitbucket.io/kevinhitedev/projects/project1" title="">Project #1</a></li>
-           <li><a href="http://bitbucket.io/kevinhitedev/projects/project2" title="">Project #2</a></li>
-           <li><a href="http://bitbucket.io/kevinhitedev/projects/project3" title="">Project #3</a></li>
-           <li><a href="http://bitbucket.io/kevinhitedev/projects/project4" title="">Project #4</a></li>
-           <li><a href="http://bitbucket.io/kevinhitedev/projects/project5" title="">Project #4</a></li>
-          </ul>
-
-      </div>
-    </div>
-  </div>
- </div>
-
-</div><!-- end projects -->
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-   $("#bioModal").modal();
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
  </body>
 </html>
