@@ -159,7 +159,7 @@
    <hr/>
    <main class="main site-main" id="main" itemprop="main" name="main" role="">
     <section class="py-5 section about site-about" id="about" itemprop="about" name="about" role="">
-     <h2 class="section-title about-title text-center" id="section-about-title" itemprop="" name="" role="">About</h2>
+     <h2 class="section-title about-title text-center" id="section-about-title" itemprop="" name="" role="">About <i class="fa fa-user" aria-hidden="true"></i></h2>
      <p class="section-description text-center" id="section-about-description" itemprop="" name="" role="">
       I am a self-taught software engineer with a passion for coding and a knack for learning new programming languages. With expertise in Python, JavaScript, PHP, Java, and C#, I am well-equipped to tackle any coding challenge that comes my way. My interest in the latest technology trends has led me to explore cloud computing, cybersecurity, and artificial intelligence. As the world becomes increasingly digitized, I recognize the importance of staying up-to-date with the latest advancements and integrating them into my work.
       <a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#bioModal" title="Read Kevin's Bio">Read the Bio</a>
@@ -173,31 +173,21 @@
         <fieldset class="projects-form-fieldset" id="projects-form-fieldset" itemprop="" name="" role="">
          <legend class="projects-form-legend text-center" id="projects-form-legend" itemprop="" name="" role="">Choose a project:</legend>
 
-         <div class="input-group">
-          <label class="projects-label" for="projects" id="projects-lable" itemprop="" name="" role="">UX</label>
-	  <select class="projects-select" id="projects-select" itemprop="" name="" role="">
-	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project4">Project #4</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project5">Project #5</option>
-   	  </select>
-	 </div><!-- input-group -->
-
-         <div class="input-group">
-          <label class="projects-label" for="projects" id="projects-lable" itemprop="" name="" role="">Graphics</label>
-	  <select class="projects-select" id="projects-select" itemprop="" name="" role="">
-	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project4">Project #4</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project5">Project #5</option>
-   	  </select>
-	 </div><!-- input-group -->
-		
         </fieldset>
        </form>
-       <ul class="projects-list" id="projects-list" itemprop="" name="" role="">
+	    
+         <div class="input-group">
+          <label class="projects-label projects-label-ux" for="projects" id="projects-ux" itemprop="" name="" role="">UX <i class="fa fa-caret-down" aria-hidden="true"></i></label>
+	  <div class="control-me"> 
+	  <select class="projects-select" id="projects-select" itemprop="" name="" role="">
+	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project4">Project #4</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project5">Project #5</option>
+	  </select>
+		
+       <ul class="projects-list-ux" id="projects-list-ux" itemprop="" name="" role="">
          <li class="projects-list-item" id="projects-list-item1" itemprop="" name="" role="">
            <a class="projects-list-item-link" href="" id="projects-list-item-link1" itemprop="" title="Project #1">Project #1</a>
          </li>
@@ -214,6 +204,42 @@
            <a class="projects-list-item-link" href="" id="projects-list-item-link5" itemprop="" title="Project #5">Project #5</a>
          </li> 
        </ul>
+		
+	  </div><!-- control-me -->
+	 </div><!-- input-group -->
+
+         <div class="input-group">
+          <label class="projects-label projects-label-graphics" for="projects-graphics" id="projects-lable" itemprop="" name="" role="">Graphics <i class="fa fa-caret-down" aria-hidden="true"></i></label>
+	  <div class="control-me">
+          <select class="projects-select" id="projects-select" itemprop="" name="" role="">
+	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project4">Project #4</option>
+	   <option class="" id="" itemprop="" name="" role="" value="project5">Project #5</option>
+   	  </select>
+		
+       <ul class="projects-list-graphics" id="projects-list-graphics" itemprop="" name="" role="">
+         <li class="projects-list-item" id="projects-list-item1" itemprop="" name="" role="">
+           <a class="projects-list-item-link" href="" id="projects-list-item-link1" itemprop="" title="Project #1">Project #1</a>
+         </li>
+         <li class="projects-list-item" id="projects-list-item2" itemprop="" name="" role="">
+           <a class="projects-list-item-link" href="" id="projects-list-item-link2" itemprop="" title="Project #2">Project #2</a>
+         </li>
+         <li class="projects-list-item" id="projects-list-item3" itemprop="" name="" role="">
+           <a class="projects-list-item-link" href="" id="projects-list-item-link3" itemprop="" title="Project #3">Project #3</a>
+         </li>
+         <li class="projects-list-item" id="projects-list-item4" itemprop="" name="" role="">
+           <a class="projects-list-item-link" href="" id="projects-list-item-link4" itemprop="" title="Project #4">Project #4</a>
+         </li>
+         <li class="projects-list-item" id="projects-list-item5" itemprop="" name="" role="">
+           <a class="projects-list-item-link" href="" id="projects-list-item-link5" itemprop="" title="Project #5">Project #5</a>
+         </li> 
+       </ul>
+		  
+          </div><!-- control-me -->
+	 </div><!-- input-group -->
+		
      </p>
     </section>
     <hr/>
