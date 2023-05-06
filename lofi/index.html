@@ -94,6 +94,11 @@
    form .input-group input.btn, a.btn, form .input-group button.btn {background-color:#222;border:1px solid #000;border-radius:.5em !important;box-shadow:0 0 1em #ddd;color:#fff;display:block !important;margin:1em auto !important;min-width:200px;max-width:200px;}
    form .input-group input.btn:hover, a.btn:hover, form .input-group button.btn:hover {background-color:#fff;border:1px solid #999;color:#000;}
    .transparency {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";filter: alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity:0.7;opacity:0.7;}
+   .visually-hidden {position:absolute;left:-100vw;}
+   .control-me::after {content: "😃";}
+   #toggle1:checked ~ .control-me::after {content: "😩";}
+   #toggle2:checked ~ .control-me::after {content: "😩";}
+
   </style>
  </head>
 <body>
@@ -178,6 +183,7 @@
 	    
          <div class="input-group">
           <label class="projects-label projects-label-ux" for="projects" id="projects-ux" itemprop="" name="" role="">UX <i class="fa fa-caret-down" aria-hidden="true"></i></label>
+	  <input type="checkbox" id="toggle1" class="visually-hidden">
 	  <div class="control-me"> 
 	  <select class="projects-select" id="projects-select" itemprop="" name="" role="">
 	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
@@ -210,6 +216,7 @@
 
          <div class="input-group">
           <label class="projects-label projects-label-graphics" for="projects-graphics" id="projects-lable" itemprop="" name="" role="">Graphics <i class="fa fa-caret-down" aria-hidden="true"></i></label>
+	  <input type="checkbox" id="toggle2" class="visually-hidden">
 	  <div class="control-me">
           <select class="projects-select" id="projects-select" itemprop="" name="" role="">
 	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
