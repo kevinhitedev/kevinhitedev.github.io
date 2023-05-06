@@ -176,8 +176,8 @@
          <legend class="projects-form-legend text-center" id="projects-form-legend" itemprop="" name="" role="">Choose a project:</legend>
 
          <div class="input-group">
-          <label class="projects-label projects-label-ux click-me" for="projects" id="projects-ux" itemprop="" name="" role="" onclick="toggleDiv()">UX <i class="fa fa-caret-down" aria-hidden="true"></i></label>
-	  <div class="" id="showhide1"> 
+          <label class="projects-label projects-label-ux click-me" for="projects" id="projects-ux" itemprop="" name="" role="" onclick="toggleOne()">UX <i class="fa fa-caret-down" aria-hidden="true"></i></label>
+	  <div class="" id="showhideOne"> 
 	  <select class="projects-select" id="projects-select" itemprop="" name="" role="">
 	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
 	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
@@ -208,8 +208,8 @@
 	 </div><!-- input-group -->
 
          <div class="input-group">
-          <label class="projects-label projects-label-graphics click-me" for="projects-graphics" id="projects-graphics" itemprop="" name="" role="" onclick="toggleDiv()">Graphics <i class="fa fa-caret-down" aria-hidden="true"></i></label>
-	  <div class="" id="showhide2">
+          <label class="projects-label projects-label-graphics click-me" for="projects-graphics" id="projects-graphics" itemprop="" name="" role="" onclick="toggleTwo()">Graphics <i class="fa fa-caret-down" aria-hidden="true"></i></label>
+	  <div class="" id="showhideTwo">
           <select class="projects-select" id="projects-select" itemprop="" name="" role="">
 	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
 	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
@@ -348,8 +348,16 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
   <script>
-   function toggleDiv(){
-     var displayStatus = document.getElementById("showhide1, showhide2");
+   function toggleOne(){
+     var displayStatus = document.getElementById("showhideOne");
+     if ( displayStatus.style.display == 'none' ){
+       displayStatus.style.display = 'block';
+     } else {
+       displayStatus.style.display = 'none';
+     }
+   };
+   function toggleTwo(){
+     var displayStatus = document.getElementById("showhideTwo");
      if ( displayStatus.style.display == 'none' ){
        displayStatus.style.display = 'block';
      } else {
