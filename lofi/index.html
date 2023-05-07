@@ -164,7 +164,7 @@
 	   
    <main class="main site-main" id="main" itemprop="main" name="main" role="">
     <section class="py-5 col-xs-6 col-md-offset-3 section about site-about" id="about" itemprop="about" name="about" role="">
-     <h2 class="section-title about-title text-center" id="section-about-title" itemprop="" name="" role="">About</h2>
+     <h2 class="section-title about-title text-center" id="section-about-title" itemprop="" name="" role="" onclick="toggleAbout()">About <i class="fa fa-caret-down" aria-hidden="true"></i></h2>
      <p class="section-description text-center" id="section-about-description" itemprop="" name="" role="">
       I am a self-taught software engineer with a passion for coding and a knack for learning new programming languages. With expertise in Python, JavaScript, PHP, Java, and C#, I am well-equipped to tackle any coding challenge that comes my way. My interest in the latest technology trends has led me to explore cloud computing, cybersecurity, and artificial intelligence. As the world becomes increasingly digitized, I recognize the importance of staying up-to-date with the latest advancements and integrating them into my work.
       <a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#bioModal" title="Read Kevin's Bio">Read the Bio</a>
@@ -172,15 +172,15 @@
     </section>
     <hr/>
     <section class="py-5 section projects site-projects" id="projects" itemprop="projects" name="projects" role="">
-     <h2 class="section-title projects-title text-center" id="section-projects-title" itemprop="" name="" role="">Projects</h2>
+     <h2 class="section-title projects-title text-center" id="section-projects-title" itemprop="" name="" role="" onclick="toggleProjects()">Projects <i class="fa fa-caret-down" aria-hidden="true"></i></h2>
      <p class="section-description" id="section-projects-description" itemprop="" name="" role="">
        <form action="" class="projects-form" id="projects-form" itemprop="" name="" role="">
         <fieldset class="projects-form-fieldset" id="projects-form-fieldset" itemprop="" name="" role="">
          <legend class="projects-form-legend text-center" id="projects-form-legend" itemprop="" name="" role="">Choose a project:</legend>
 
          <div class="input-group">
-          <label class="projects-label projects-label-ux click-me" for="projects" id="projects-ux" itemprop="" name="" role="" onclick="toggleOne()">UX <i class="fa fa-caret-down" aria-hidden="true"></i></label>
-	  <div class="" id="showhideOne"> 
+          <label class="projects-label projects-label-ux click-me" for="projects" id="projects-ux" itemprop="" name="" role="" onclick="toggleUX()">UX <i class="fa fa-caret-down" aria-hidden="true"></i></label>
+	  <div class="" id="showhideUX"> 
 	  <select class="projects-select" id="projects-select" itemprop="" name="" role="">
 	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
 	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
@@ -211,8 +211,8 @@
 	 </div><!-- input-group -->
 
          <div class="input-group">
-          <label class="projects-label projects-label-graphics click-me" for="projects-graphics" id="projects-graphics" itemprop="" name="" role="" onclick="toggleTwo()">Graphics <i class="fa fa-caret-down" aria-hidden="true"></i></label>
-	  <div class="" id="showhideTwo">
+          <label class="projects-label projects-label-graphics click-me" for="projects-graphics" id="projects-graphics" itemprop="" name="" role="" onclick="toggleGraphics()">Graphics <i class="fa fa-caret-down" aria-hidden="true"></i></label>
+	  <div class="" id="showhideGraphics">
           <select class="projects-select" id="projects-select" itemprop="" name="" role="">
 	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
 	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
@@ -249,7 +249,7 @@
     </section>
     <hr/>
     <section class="py-5 section contact site-contact" id="contact" itemprop="contact" name="contact" role="">
-     <h2 class="section-title contact-title text-center" id="section-contact-title" itemprop="" name="" role="">Contact</h2>
+     <h2 class="section-title contact-title text-center" id="section-contact-title" itemprop="" name="" role="" onclick="toggleContact()">Contact <i class="fa fa-caret-down" aria-hidden="true"></i></h2>
      <form action="https://formspree.io/kevhite@icloud.com" class="contactform" id="contactform" method="POST" name="contactform">
       <fieldset>
        <legend></legend>
@@ -349,16 +349,40 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
   <script>
-   function toggleOne(){
-     var displayStatus = document.getElementById("showhideOne");
+   function toggleUX(){
+     var displayStatus = document.getElementById("showhideUX");
      if ( displayStatus.style.display == 'none' ){
        displayStatus.style.display = 'block';
      } else {
        displayStatus.style.display = 'none';
      }
    };
-   function toggleTwo(){
-     var displayStatus = document.getElementById("showhideTwo");
+   function toggleGraphics(){
+     var displayStatus = document.getElementById("showhideGraphics");
+     if ( displayStatus.style.display == 'none' ){
+       displayStatus.style.display = 'block';
+     } else {
+       displayStatus.style.display = 'none';
+     }
+   };
+   function toggleAbout(){
+     var displayStatus = document.getElementById("showhideAbout");
+     if ( displayStatus.style.display == 'none' ){
+       displayStatus.style.display = 'block';
+     } else {
+       displayStatus.style.display = 'none';
+     }
+   };
+   function toggleProjects(){
+     var displayStatus = document.getElementById("showhideProjects");
+     if ( displayStatus.style.display == 'none' ){
+       displayStatus.style.display = 'block';
+     } else {
+       displayStatus.style.display = 'none';
+     }
+   };
+   function toggleContact(){
+     var displayStatus = document.getElementById("showhideContact");
      if ( displayStatus.style.display == 'none' ){
        displayStatus.style.display = 'block';
      } else {
