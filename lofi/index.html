@@ -68,7 +68,8 @@
    */
    html, body, * {scroll-behavior:smooth;animation: 3s infinite alternate slidein;}
    a {color:#333;font-weight:bold;text-decoration:none;} a:hover {color:#444;text-decoration:none;}
-   body {background-color:#fff;color:#333;font-size:12pt;line-height:1.8em;}
+   body {background-color:#fff;color:#333;font-size:12pt;line-height:1.8em;display: grid;
+  grid-template-columns: auto auto;}
    h1, h2, h3, h4, h5 {font-family:'Rubik', sans-serif;font-weight:bold;}
    footer.site-footer p, header.site-header p.site-description, p.read-more a.readmore {color:#333;font-size:80%;text-transform:uppercase;}
    footer.site-footer p.credit {letter-spacing:1pt;}
@@ -95,6 +96,8 @@
    form .input-group input.btn, a.btn, form .input-group button.btn {background-color:#222;border:1px solid #000;border-radius:.5em !important;box-shadow:0 0 1em #ddd;color:#fff;display:block !important;margin:1em auto !important;min-width:200px;max-width:200px;}
    form .input-group input.btn:hover, a.btn:hover, form .input-group button.btn:hover {background-color:#fff;border:1px solid #999;color:#000;}
    form legend {font-size:90%;letter-spacing:1.5pt;text-transform:uppercase;}
+   a.backtotop {background-color:#000;border-radius:.5em;bottom:70px;color:#fff;cursor:pointer;padding:.3em .5em;position:fixed;right:70px;z-index:9999;}
+   a.backtotop:hover {background-color:#fff;color:#000;}
    .transparency {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";filter: alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity:0.7;opacity:0.7;}
    #showhideUX, #showhideGraphics, #showhideAbout, #showhideProjects, #showhideContact {display:none;}
    .click-me {cursor:pointer;}
@@ -313,7 +316,9 @@
    </footer>
 
   </div><!-- container -->
-
+	
+  <a href="#header" class="backtotop" title="Back to Top &#x2B06;">Back to Top &#x2B06;</a>
+	
   <div class="bio modal-dialog modal-dialog-centered modal-dialog-scrollable">
 
    <div class="modal fade" id="bioModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
