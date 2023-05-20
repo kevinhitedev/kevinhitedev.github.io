@@ -97,7 +97,7 @@
    a.backtotop {background-color:#000;border-radius:.5em;bottom:70px;color:#fff;cursor:pointer;padding:.3em .5em;position:fixed;right:70px;z-index:9999;}
    a.backtotop:hover {background-color:#fff;color:#000;}
    .transparency {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";filter: alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity:0.7;opacity:0.7;}
-   #showhideUX, #showhideGraphics, #showhideAbout, #showhideProjects, #showhideContact, #showhideMLAI, #showhideSEO {display:none;}
+   #showhideUX, #showhideGraphics, #showhideAbout, #showhideProjects, #showhideContact, #showhideMLAI, #showhideDM {display:none;}
    .click-me {cursor:pointer;}
   </style>
   <script>            
@@ -213,7 +213,7 @@
 	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
 	  </select>
 		
-       <ul class="projects-list-ux" id="projects-list-ux" itemprop="" name="" role="">
+       <ul class="projects-list projects-list-ux" id="projects-list-ux" itemprop="" name="" role="">
          <li class="projects-list-item" id="projects-list-item1" itemprop="" name="" role="">
            <a class="projects-list-item-link" href="" id="projects-list-item-link1" itemprop="" title="Project #1">Project #1</a>
          </li>
@@ -237,7 +237,7 @@
 	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
    	  </select>
 		
-       <ul class="projects-list-graphics" id="projects-list-graphics" itemprop="" name="" role="">
+       <ul class="projects-list projects-list-graphics" id="projects-list-graphics" itemprop="" name="" role="">
          <li class="projects-list-item" id="projects-list-item1" itemprop="" name="" role="">
            <a class="projects-list-item-link" href="" id="projects-list-item-link1" itemprop="" title="Project #1">Project #1</a>
          </li>
@@ -264,7 +264,7 @@
 	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
    	  </select>
 		
-       <ul class="projects-list-mlai" id="projects-list-mlai" itemprop="" name="" role="">
+       <ul class="projects-list projects-list-mlai" id="projects-list-mlai" itemprop="" name="" role="">
          <li class="projects-list-item" id="projects-list-item1" itemprop="" name="" role="">
            <a class="projects-list-item-link" href="" id="projects-list-item-link1" itemprop="" title="Project #1">Project #1</a>
          </li>
@@ -280,15 +280,15 @@
 	 </div><!-- input-group -->
 
          <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <label class="projects-label projects-label-seo click-me" for="projects-seo" id="projects-seo" itemprop="" name="" role="" onclick="toggleSEO()">SEO <i class="fa fa-caret-down" aria-hidden="true"></i></label>
-	  <div class="" id="showhideSEO">
+          <label class="projects-label projects-label-dm click-me" for="projects-seo" id="projects-seo" itemprop="" name="" role="" onclick="toggleDM()">Digital Marketing <i class="fa fa-caret-down" aria-hidden="true"></i></label>
+	  <div class="" id="showhideDM">
           <select class="projects-select" id="projects-select" itemprop="" name="" role="">
 	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
 	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
 	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
    	  </select>
 		
-       <ul class="projects-list-seo" id="projects-list-seo" itemprop="" name="" role="">
+       <ul class="projects-list projects-list-dm" id="projects-list-dm" itemprop="" name="" role="">
          <li class="projects-list-item" id="projects-list-item1" itemprop="" name="" role="">
            <a class="projects-list-item-link" href="" id="projects-list-item-link1" itemprop="" title="Project #1">Project #1</a>
          </li>
@@ -499,8 +499,8 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
   <script>
-   function toggleSEO(){
-     var displayStatus = document.getElementById("showhideSEO");
+   function toggleDM(){
+     var displayStatus = document.getElementById("showhideDM");
      if ( displayStatus.style.display == 'none' ){
        displayStatus.style.display = 'block';
      } else {
