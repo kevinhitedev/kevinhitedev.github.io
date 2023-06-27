@@ -197,25 +197,18 @@
     <section class="py-5 px-5 col-xs-6 md-offset-4 section projects site-projects" id="projects" itemprop="projects" name="projects" role="">
      <h2 class="section-title projects-title text-center click-me" id="section-projects-title" itemprop="" name="" role="" onclick="toggleProjects()">Projects <i class="fa fa-caret-down" aria-hidden="true"></i></h2>
      <div class="" id="showhideProjects"> 
-     <p class="section-description" id="section-projects-description" itemprop="" name="" role="">
+     <p class="section-description" id="section-projects-description" itemprop="" name="" role=""></p>
 	     
-       <form action="" class="projects-form" id="projects-form" itemprop="" name="" role="">
-        <fieldset class="projects-form-fieldset" id="projects-form-fieldset" itemprop="" name="" role="">
-         <legend class="projects-form-legend text-center" id="projects-form-legend" itemprop="" name="" role="">Choose a project:</legend>
-
-	<div class="row">
-		
 	  <ul class="nav nav-tabs">
-  	    <li class="active"><a data-toggle="tab" href="#UX" title="UX">UX</a></li>
-  	    <li><a data-toggle="tab" href="#GRAPHICS" title="GRAPHICS">GRAPHICS</a></li>
-  	    <li><a data-toggle="tab" href="#MLAI" title="MACHINE LEARNING / ARTIFICIAL INTELLIGENCE">ML/AI</a></li>
-  	    <li><a data-toggle="tab" href="#DIGITALMARKETING" title="DIGITAL MARKETING">DIGITAL MARKETING</a></li>
+  	    <li class="active"><a data-toggle="tab" href="#tabUX" title="UX">UX</a></li>
+  	    <li><a data-toggle="tab" href="#tabGRAPHICS" title="GRAPHICS">GRAPHICS</a></li>
+  	    <li><a data-toggle="tab" href="#tabMLAI" title="MACHINE LEARNING / ARTIFICIAL INTELLIGENCE">ML/AI</a></li>
+  	    <li><a data-toggle="tab" href="#tabDIGITALMARKETING" title="DIGITAL MARKETING">DIGITAL MARKETING</a></li>
 	  </ul>
 
 	  <div class="tab-content">
          
-	    <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12 tab-pane fade in active" id="">
-          	
+	    <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12 tab-pane fade in active" id="tabUX">
 	        <label class="projects-label projects-label-ux click-me" for="projects" id="projects-ux" itemprop="" name="" role="" onclick="toggleUX()">UX <i class="fa fa-caret-down" aria-hidden="true"></i></label>
 	  	<div class="" id="showhideUX"> 
 	  	<select class="projects-select" id="projects-select" itemprop="" name="" role="">
@@ -224,10 +217,9 @@
 	   	  <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
 	  	</select>
 	  	</div><!-- control-me -->
-		    
 	    </div><!-- input-group -->
 
-	    <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12 tab-pane fade in active" id="">
+	    <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12 tab-pane fade in active" id="tabGRAPHICS">
           	<label class="projects-label projects-label-graphics click-me" for="projects-graphics" id="projects-graphics" itemprop="" name="" role="" onclick="toggleGraphics()">Graphics <i class="fa fa-caret-down" aria-hidden="true"></i></label>
 	  	<div class="" id="showhideGraphics">
           	<select class="projects-select" id="projects-select" itemprop="" name="" role="">
@@ -238,62 +230,30 @@
          	</div><!-- control-me -->
 	    </div><!-- input-group -->
 		
-	</div><!-- row -->
-	<div class="row">
+            <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12 tab-pane fade in active" id="tabMLAI">
+          	<label class="projects-label projects-label-mlai click-me" for="projects-mlai" id="projects-mlai" itemprop="" name="" role="" onclick="toggleMLAI()">Machine Learning / Artificial Intelligence <i class="fa fa-caret-down" aria-hidden="true"></i></label>
+	  	<div class="" id="showhideMLAI">
+          	<select class="projects-select" id="projects-select" itemprop="" name="" role="">
+	   	  <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
+	   	  <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
+	   	  <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
+   	  	</select>
+          	</div><!-- control-me -->
+	    </div><!-- input-group -->
 
-         <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <label class="projects-label projects-label-mlai click-me" for="projects-mlai" id="projects-mlai" itemprop="" name="" role="" onclick="toggleMLAI()">Machine Learning / Artificial Intelligence <i class="fa fa-caret-down" aria-hidden="true"></i></label>
-	  <div class="" id="showhideMLAI">
-          <select class="projects-select" id="projects-select" itemprop="" name="" role="">
-	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
-   	  </select>
-		
-       <ul class="projects-list projects-list-mlai" id="projects-list-mlai" itemprop="" name="" role="">
-         <li class="projects-list-item" id="projects-list-item1" itemprop="" name="" role="">
-           <a class="projects-list-item-link" href="" id="projects-list-item-link1" itemprop="" title="Project #1">Project #1</a>
-         </li>
-         <li class="projects-list-item" id="projects-list-item2" itemprop="" name="" role="">
-           <a class="projects-list-item-link" href="" id="projects-list-item-link2" itemprop="" title="Project #2">Project #2</a>
-         </li>
-         <li class="projects-list-item" id="projects-list-item3" itemprop="" name="" role="">
-           <a class="projects-list-item-link" href="" id="projects-list-item-link3" itemprop="" title="Project #3">Project #3</a>
-         </li>
-       </ul>
-		  
-          </div><!-- control-me -->
-	 </div><!-- input-group -->
+            <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12 tab-pane fade in active" id="tabDIGITALMARKETING">
+          	<label class="projects-label projects-label-dm click-me" for="projects-seo" id="projects-seo" itemprop="" name="" role="" onclick="toggleDM()">Digital Marketing <i class="fa fa-caret-down" aria-hidden="true"></i></label>
+	  	<div class="" id="showhideDM">
+          	<select class="projects-select" id="projects-select" itemprop="" name="" role="">
+	   	  <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
+	   	  <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
+	   	  <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
+   	  	</select>
+          	</div><!-- control-me -->
+	    </div><!-- input-group -->
 
-         <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <label class="projects-label projects-label-dm click-me" for="projects-seo" id="projects-seo" itemprop="" name="" role="" onclick="toggleDM()">Digital Marketing <i class="fa fa-caret-down" aria-hidden="true"></i></label>
-	  <div class="" id="showhideDM">
-          <select class="projects-select" id="projects-select" itemprop="" name="" role="">
-	   <option class="" id="" itemprop="" name="" role="" value="project1">Project #1</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project2">Project #2</option>
-	   <option class="" id="" itemprop="" name="" role="" value="project3">Project #3</option>
-   	  </select>
-		
-       <ul class="projects-list projects-list-dm" id="projects-list-dm" itemprop="" name="" role="">
-         <li class="projects-list-item" id="projects-list-item1" itemprop="" name="" role="">
-           <a class="projects-list-item-link" href="" id="projects-list-item-link1" itemprop="" title="Project #1">Project #1</a>
-         </li>
-         <li class="projects-list-item" id="projects-list-item2" itemprop="" name="" role="">
-           <a class="projects-list-item-link" href="" id="projects-list-item-link2" itemprop="" title="Project #2">Project #2</a>
-         </li>
-         <li class="projects-list-item" id="projects-list-item3" itemprop="" name="" role="">
-           <a class="projects-list-item-link" href="" id="projects-list-item-link3" itemprop="" title="Project #3">Project #3</a>
-         </li>
-       </ul>
-		  
-          </div><!-- control-me -->
-	 </div><!-- input-group -->
-	</div><!-- row -->
+        </div><!-- tab-content -->
 
-        </fieldset>
-       </form>
-	    
-     </p>
      <p><a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#projectModal" title="View More Of Kevin's Projects">&bull; View More Projects &bull;</a></p>
      </div><!-- showhideProjects --> 
     </section>
