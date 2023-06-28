@@ -98,7 +98,7 @@
    a.backtotop {background-color:#000;border-radius:.5em;bottom:1em;color:#fff;cursor:pointer;padding:.3em .5em;position:fixed;right:1em;z-index:9999;}
    a.backtotop:hover {background-color:#fff;color:#000;}
    .transparency {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";filter: alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity:0.7;opacity:0.7;}
-   #showhideUX, #showhideGraphics, #showhideAbout, #showhideProjects, #showhideContact, #showhideMLAI, #showhideDM {display:none;}
+   #showhideUX, #showhideGraphics, #showhideAbout, #showhideProjects, #showhideContact, #showhideMLAI, #showhideDM {display:visible;}
    .click-me {cursor:pointer;}
   </style>
   <script>            
@@ -208,7 +208,7 @@
 
 	  <div class="tab-content">
          
-	    <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12 tab-pane fade in active" id="tabUX">
+	    <div class="tab-pane fade active" id="tabUX">
 	        <label class="projects-label projects-label-ux click-me" for="projects" id="projects-ux" itemprop="" name="" role="" onclick="toggleUX()">UX <i class="fa fa-caret-down" aria-hidden="true"></i></label>
 	  	<div class="" id="showhideUX"> 
 	  	<select class="projects-select" id="projects-select" itemprop="" name="" role="">
@@ -219,7 +219,7 @@
 	  	</div><!-- control-me -->
 	    </div><!-- input-group -->
 
-	    <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12 tab-pane fade in active" id="tabGRAPHICS">
+	    <div class="tab-pane fade" id="tabGRAPHICS">
           	<label class="projects-label projects-label-graphics click-me" for="projects-graphics" id="projects-graphics" itemprop="" name="" role="" onclick="toggleGraphics()">Graphics <i class="fa fa-caret-down" aria-hidden="true"></i></label>
 	  	<div class="" id="showhideGraphics">
           	<select class="projects-select" id="projects-select" itemprop="" name="" role="">
@@ -230,7 +230,7 @@
          	</div><!-- control-me -->
 	    </div><!-- input-group -->
 		
-            <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12 tab-pane fade in active" id="tabMLAI">
+            <div class="tab-pane fade" id="tabMLAI">
           	<label class="projects-label projects-label-mlai click-me" for="projects-mlai" id="projects-mlai" itemprop="" name="" role="" onclick="toggleMLAI()">Machine Learning / Artificial Intelligence <i class="fa fa-caret-down" aria-hidden="true"></i></label>
 	  	<div class="" id="showhideMLAI">
           	<select class="projects-select" id="projects-select" itemprop="" name="" role="">
@@ -241,7 +241,7 @@
           	</div><!-- control-me -->
 	    </div><!-- input-group -->
 
-            <div class="input-group col-lg-6 col-md-6 col-sm-12 col-xs-12 tab-pane fade in active" id="tabDIGITALMARKETING">
+            <div class="tab-pane fade" id="tabDIGITALMARKETING">
           	<label class="projects-label projects-label-dm click-me" for="projects-seo" id="projects-seo" itemprop="" name="" role="" onclick="toggleDM()">Digital Marketing <i class="fa fa-caret-down" aria-hidden="true"></i></label>
 	  	<div class="" id="showhideDM">
           	<select class="projects-select" id="projects-select" itemprop="" name="" role="">
