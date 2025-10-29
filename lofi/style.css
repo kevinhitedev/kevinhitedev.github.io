@@ -1,12 +1,12 @@
 /**
- * Theme Name:        Fabled Sunset
- * Theme URI:         https://example.com/fabled-sunset
- * Description:       Custom theme description...
+ * Theme Name:        kevinhitedev on GitHub
+ * Theme URI:         https://kevinhite.dev
+ * Description:       Custom theme
  * Version:           1.0.0
- * Author:            Your Name
- * Author URI:        https://example.com
+ * Author:            @kevinhitedev
+ * Author URI:        https://kevinhite.dev
  * Tags:              block-patterns, full-site-editing
- * Text Domain:       fabled-sunset
+ * Text Domain:       kevinhitedev
  * Domain Path:       /assets/lang
  * Tested up to:      6.4
  * Requires at least: 6.2
@@ -14,3 +14,62 @@
  * License:           GNU General Public License v2.0 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
+
+   html, body, * {scroll-behavior:smooth;animation: 3s infinite alternate slidein;}
+   a {color:#333;font-weight:bold;text-decoration:none;} a:hover {color:#444;text-decoration:none;}
+   body {background-color:#fff;color:#333;font-size:12pt;line-height:1.8em;}
+   h1, h2, h3, h4, h5, nav a.navbar-brand {font-family:'Rubik', sans-serif;font-weight:bold;}
+   img.img-responsive {max-width:100%;}
+   /* footer.site-footer {position:fixed;bottom:1em;width:99%;} */
+   footer.site-footer p, header.site-header p.site-description, p.read-more a.readmore {color:#333;font-size:80%;text-transform:uppercase;}
+   footer.site-footer p.credit-links {letter-spacing:1pt;}
+   footer.site-footer p.socialmedia-links {font-size:75%;padding:1.5em 0;}
+   footer.site-footer p.credit-links, footer.site-footer p.socialmedia-links {display:block;margin:1em auto;}
+   footer.site-footer p.credit-links small {padding:1.5em 0;}
+   footer.site-footer p a {color:#333;} footer.site-footer p a:hover {color:#666;}
+   /* header.site-header {margin-top:2%;} */
+   header.site-header h1.site-title a.url {font-weight:500;} 
+   header.site-header h1.site-title a.url span.name {font-size:3em;font-style:italic;letter-spacing:.6;}
+   header.site-header p.site-description {display:block;letter-spacing:1pt;margin:0 auto;padding:.4em .1em .3em .1em;text-transform:uppercase;max-width:400px;}
+   header.site-header p.site-description:hover {background-color:#000;color:#fff;}
+   header.site-header p.site-description a {font-weight:normal;color:#000;} 
+   header.site-header p.site-description:hover a, header.site-header p.site-description:hover a:hover, header.site-header p.site-description a:hover {background-color:#000;color:#fff;}
+   hr {border-color:#ccc;color:#ccc;}
+   nav.navbar a.navbar-brand {font-size:80%;font-style:normal;font-weight:bold;}
+   nav.navbar a.navbar-brand span.kh {font-style:italic;}
+   nav.navbar a.navbar-brand small {font-weight:normal;}
+   nav.navbar ul.navbar-center {position:absolute;left:50%;transform:translatex(-50%);}	  
+   nav.navbar ul {text-transform:uppercase;font-size:85%;letter-spacing:1pt;}
+   nav.navbar ul li a {color:#000;font-weight:600;} nav.navbar ul li a:hover {border-bottom:4px solid #444;color:#333;}
+   nav.navbar ul li.nav-item a.nav-link span.kh {text-transform:lowercase;}
+   p {line-height:1.8em;} 
+   form, .projects-list#projects-list {margin:0 auto;max-width:400px;}
+   form .input-group {display:block;padding:.5em 0;}
+   form .input-group input, form .input-group select, form .input-group select option, form .input-group textarea {border:1px solid #999;color:#999;display:block;font-size:10pt;padding:.3em .5em;width:100%;}
+   form .input-group input:hover form .input-group select:hover, form .input-group select option:hover, form .input-group textarea:hover {border-color:#222;color:#222;}
+   form .input-group label {color:#000;font-size:80%;font-weight:bold;padding:.3em .5em;text-transform:uppercase;}
+   form .input-group span {color:#999;display:block;font-size:80%;text-align:right;}
+   form .input-group input.btn, a.btn, form .input-group button.btn {background-color:#222;border:1px solid #000;border-radius:.5em !important;box-shadow:0 0 1em #ddd;color:#fff;display:block !important;margin:1em auto !important;min-width:200px;max-width:200px;}
+   form .input-group input.btn:hover, a.btn:hover, form .input-group button.btn:hover {background-color:#fff;border:1px solid #999;color:#000;}
+   form legend {font-size:90%;letter-spacing:1.5pt;text-transform:uppercase;}
+   form div.input-group label.form-label, 
+   form div.input-group input.form-control,
+   form div.input-group textarea.form-control,
+   form div.input-group div.help {display:inline-block;width:100%;}
+   form div.input-group label.form-label {font-weight:bold;font-size:90%;}
+   form div.input-group div.help {}
+   form div.input-group textarea.form-control {height:110px;}
+   .yourreason {display:block;width:100% !important;}
+   .btn-primary {background-color:#000;border-radius:.5em;color:#fff;cursor:pointer;padding:.3em .5em;}
+   .btn-primary:hover {background-color:#fff;color:#000;}
+   a.backtotop {background-color:#000;border-radius:.5em;bottom:1em;color:#fff;cursor:pointer;padding:.3em .5em;position:fixed;right:1em;z-index:9999;}
+   a.backtotop:hover {background-color:#fff;color:#000;}
+   .transparency {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";filter: alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity:0.7;opacity:0.7;}
+   #showhideUX, #showhideGraphics, #showhideAbout, #showhideProjects, #showhideContact, #showhideMLAI, #showhideDM {display:none;}
+   .click-me {cursor:pointer;}
+   .nav-tabs {margin:0 auto;max-width:450px;}
+   .nav-tabs li {background-color:#eee;margin:1px;padding:1em;}
+   a.readmore {display:block;}
+    @media screen and (max-device-width: 640px) {
+      header.site-header {margin-top:3em;}
+    }
